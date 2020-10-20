@@ -1,0 +1,405 @@
+@charset "UTF-8";
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-weight: 500;
+    color: #333;
+    line-height: 2.0;
+    letter-spacing: 0.1em;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+figure {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all .6s ease;
+}
+
+a:hover {
+    transition: all .6s ease;
+}
+
+.content-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+
+/** TOP NAV  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav **/
+
+.topnav {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover:not(:last-child) {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar-menu-items .icon {
+    display: none;
+}
+
+.navbar-menu-items {
+    float: right;
+}
+
+.topnav .phone-number {
+    border: 1px solid #fff;
+    margin: 10px;
+    line-height: initial;
+    padding: 7px;
+}
+
+
+/* header banner, heading */
+
+.header h2 {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    padding: 1rem;
+    color: #fff;
+    font-size: 5vw;
+    transform: translateY(-50%);
+}
+
+.mainvisual {
+    position: relative;
+}
+
+.header-img {
+    height: 700px;
+    object-fit: cover;
+    object-position: 0 15%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+
+
+/* section TOPICS */
+
+.sec-news {
+    margin-top: 150px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.sec-news.heading {
+    width: 35%;
+}
+
+.title-topics {
+    padding: 10px 100px 20px 100px;
+    float: left;
+}
+
+.topics-contents {
+    width: 65%;
+    padding-right: 30px;
+}
+
+.topics-contents ul {
+    display: block;
+}
+
+.topics-contents li {
+    display: block;
+    padding-left: 25px;
+}
+
+.topics-contents a:hover {
+    color: #999;
+}
+
+.topics-contents li:not(:last-child) {
+    border-bottom: #666 1px dotted;
+}
+
+.topics-contents li p {
+    margin-bottom: 5px;
+}
+
+.topics-contents time {
+    float: left;
+    margin-right: 30px;
+}
+
+.topics-more a {
+    display: block;
+    float: right;
+    border: #666 1px solid;
+    padding: 8px 60px;
+    color: #333;
+}
+
+.topics-more a:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* section FACILITY */
+
+.sec-facility {
+    margin-top: 150px;
+    position: relative;
+    display: block;
+}
+
+.img-facility {
+    height: 400px;
+    object-fit: cover;
+}
+
+.sec-facility .facility-contents {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+}
+
+.facility-contents h2 {
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.facility-contents p {
+    color: #fff;
+    margin-top: 0;
+    line-height: 0;
+}
+
+.facility-more a {
+    color: white;
+    display: block;
+    margin-top: 65px;
+    border: #fff solid 1px;
+    width: max-content;
+    padding: 8px 60px;
+}
+
+.facility-more a:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* section CAREER */
+
+.sec-career {
+    margin-top: 150px;
+    display: flex;
+    position: relative;
+}
+
+.sec-career-full,
+.sec-career-part {
+    width: 50%;
+    margin: 0 2%;
+    position: relative;
+}
+
+.sec-career-full h2,
+.sec-career-part h2 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.sec-career .img-full-time,
+.sec-career .img-part-time {
+    flex: auto;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 15%;
+    -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+}
+
+.sec-career-part {
+    margin-top: 20px;
+}
+
+
+/* section CONTACT US */
+
+.sec-contact {
+    margin-top: 150px;
+    position: relative;
+    display: block;
+}
+
+.img-contact {
+    height: 400px;
+    object-fit: cover;
+}
+
+.contact {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: #fff solid 1px;
+}
+
+.contact a {
+    padding: 15px 100px;
+    color: white;
+    display: block;
+}
+
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    padding: 150px 4%;
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    border-bottom: #666 1px solid;
+    justify-content: space-between;
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.footer-brand:hover {
+    color: #999;
+}
+
+.footer-items a {
+    color: #333;
+}
+
+.footer-items a:not(:last-child) {
+    padding-right: 20px;
+}
+
+.footer-items a:hover {
+    color: #999;
+}
+
+.copyright {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+
+/* Jump to top button */
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #666;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}

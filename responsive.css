@@ -1,0 +1,117 @@
+@media screen and (max-width: 767px) {
+    .navbar-menu-items a:not(:last-child) {
+        display: none;
+    }
+    .navbar-menu-items .icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+        background-color: #708090;
+        z-index: 100;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar-menu-items .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header h2 {
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        font-size: 1.5rem;
+    }
+    .mainvisual img {
+        height: auto;
+    }
+    .sec-news {
+        display: block;
+    }
+    .title-topics {
+        padding: 0;
+        float: none;
+        text-align: center;
+    }
+    .topics-contents {
+        width: 100%;
+        padding: 0;
+    }
+    .topics-contents ul {
+        display: block;
+        width: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .topics-contents li {
+        padding-left: 0;
+    }
+    .topics-contents time {
+        float: none;
+        margin-top: 15px;
+        display: block;
+        margin-right: 0;
+    }
+    .topics-contents li p {
+        margin-top: 5px;
+    }
+    .topics-more {
+        float: none;
+        text-align: center;
+        margin-top: 3rem;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topics-more a {
+        float: none;
+    }
+    .sec-facility .facility-contents {
+        left: 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .facility-more {
+        margin: 65px auto;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .facility-more a {
+        width: auto;
+    }
+    .sec-career {
+        flex-direction: column;
+    }
+    .sec-career-full,
+    .sec-career-part {
+        width: 100%;
+        padding: 2% 2%;
+        margin: 0;
+        position: relative;
+    }
+    .sec-career .img-full-time,
+    .sec-career .img-part-time {
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+    .contact a {
+        padding: 0;
+        width: 300px;
+        text-align: center;
+    }
+    .footer-top {
+        display: block;
+        border-bottom: #666 1px solid;
+        text-align: center;
+    }
+    .footer-address {
+        text-align: center;
+    }
+}
