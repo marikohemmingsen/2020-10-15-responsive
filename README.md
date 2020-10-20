@@ -1,5 +1,8 @@
 # 2020-10-15-responsive
 
+Responsive design coding レスポンシブデザインのコーディング (Media queries only)
+https://marikohemmingsen.wordpress.com/2020/10/19/front-end-coding-html-css-mediaqueries/
+
 材料はこちら(https://note.com/kurinosuke32/n/n76848f5b576c)。
 今回はBootstrapは使わず、CSSだけでレスポンシブにしてみました。メニューは固定ではなく、代わりにトップへ戻るボタンを右下に追加。
 
